@@ -30,7 +30,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="283"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzn-XE-fpV">
-                                            <rect key="frame" x="11" y="15" width="133" height="23"/>
+                                            <rect key="frame" x="11" y="15" width="133" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="133" id="IJN-Hj-KYc"/>
                                             </constraints>
@@ -41,7 +41,7 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="av5-rH-gB9">
-                                            <rect key="frame" x="441" y="11" width="140" height="32"/>
+                                            <rect key="frame" x="441" y="11" width="140" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="140" id="TTQ-Kk-K4U"/>
                                             </constraints>
@@ -53,133 +53,133 @@
                                             </state>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATT-8O-kDa">
-                                            <rect key="frame" x="432" y="4" width="1" height="45"/>
+                                            <rect key="frame" x="432" y="4" width="1" height="28"/>
                                             <color key="backgroundColor" red="0.25882352941176467" green="0.45882352941176469" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="1" id="FvV-4g-Qyz"/>
-                                                <constraint firstAttribute="height" constant="45" id="QVj-OL-VT0"/>
+                                                <constraint firstAttribute="height" constant="28" id="b7T-Q3-LNT"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8PT-U3-0qX">
-                                            <rect key="frame" x="13" y="53" width="574" height="1"/>
+                                            <rect key="frame" x="13" y="43" width="574" height="1"/>
                                             <color key="backgroundColor" red="0.25490196078431371" green="0.45882352941176469" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="Qkw-Ud-7Lp"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yE1-i4-3Ig">
-                                            <rect key="frame" x="13" y="84" width="574" height="1"/>
+                                            <rect key="frame" x="13" y="74" width="574" height="1"/>
                                             <color key="backgroundColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="D9s-qS-w7s"/>
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2t-kN-vOW">
-                                            <rect key="frame" x="56" y="61" width="18" height="16"/>
+                                            <rect key="frame" x="56" y="51" width="18" height="16"/>
                                             <state key="normal" image="ovalGreen">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waI-Le-5bd">
-                                            <rect key="frame" x="151" y="58" width="18" height="22"/>
+                                            <rect key="frame" x="151" y="48" width="18" height="22"/>
                                             <state key="normal" image="ovalYellow">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLY-9f-ORE">
-                                            <rect key="frame" x="246" y="60" width="18" height="18"/>
+                                            <rect key="frame" x="246" y="50" width="18" height="18"/>
                                             <state key="normal" image="ovalPink">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkm-H5-wJ8">
-                                            <rect key="frame" x="13" y="115" width="574" height="1"/>
+                                            <rect key="frame" x="13" y="105" width="574" height="1"/>
                                             <color key="backgroundColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="hs6-aJ-jTh"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5p-j8-dYY">
-                                            <rect key="frame" x="13" y="146" width="572" height="1"/>
+                                            <rect key="frame" x="13" y="136" width="572" height="1"/>
                                             <color key="backgroundColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="biK-cC-nLq"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdp-qm-puR">
-                                            <rect key="frame" x="13" y="177" width="574" height="1"/>
+                                            <rect key="frame" x="13" y="167" width="574" height="1"/>
                                             <color key="backgroundColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="8eh-7H-ikk"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsE-0U-DlV">
-                                            <rect key="frame" x="13" y="208" width="574" height="1"/>
+                                            <rect key="frame" x="13" y="198" width="574" height="1"/>
                                             <color key="backgroundColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="JEC-gL-T1Y"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYm-Ja-29P">
-                                            <rect key="frame" x="13" y="239" width="574" height="1"/>
+                                            <rect key="frame" x="13" y="229" width="574" height="1"/>
                                             <color key="backgroundColor" red="0.25490196079999999" green="0.45882352939999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="xyZ-Cu-H6L"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DARK THEME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHu-mP-ezi">
-                                            <rect key="frame" x="20" y="93" width="84.5" height="14"/>
+                                            <rect key="frame" x="20" y="83" width="84.5" height="14"/>
                                             <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                             <color key="textColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-fn-jak">
-                                            <rect key="frame" x="536" y="85" width="51" height="31"/>
+                                            <rect key="frame" x="536" y="75" width="51" height="31"/>
                                         </switch>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="syi-K7-iqf">
-                                            <rect key="frame" x="536" y="115" width="51" height="31"/>
+                                            <rect key="frame" x="536" y="105" width="51" height="31"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TINTED BACKGROUND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLD-Gb-3Cq">
-                                            <rect key="frame" x="20" y="124" width="148" height="14"/>
+                                            <rect key="frame" x="20" y="114" width="148" height="14"/>
                                             <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                             <color key="textColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEXT EPISODE SORTING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eku-mZ-Evl">
-                                            <rect key="frame" x="20" y="155" width="155" height="14"/>
+                                            <rect key="frame" x="20" y="145" width="155" height="14"/>
                                             <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                             <color key="textColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAY-Tf-zdd">
-                                            <rect key="frame" x="536" y="147" width="51" height="31"/>
+                                            <rect key="frame" x="536" y="137" width="51" height="31"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST EPISODE SORTING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJo-dJ-dYb">
-                                            <rect key="frame" x="20" y="186" width="152.5" height="14"/>
+                                            <rect key="frame" x="20" y="176" width="152.5" height="14"/>
                                             <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                             <color key="textColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3HO-1W-gOZ">
-                                            <rect key="frame" x="536" y="178" width="51" height="31"/>
+                                            <rect key="frame" x="536" y="168" width="51" height="31"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALPHABETICAL SORTING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4L7-xq-xoH">
-                                            <rect key="frame" x="20" y="217" width="161" height="14"/>
+                                            <rect key="frame" x="20" y="207" width="161" height="14"/>
                                             <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                             <color key="textColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="see-8C-tiC">
-                                            <rect key="frame" x="536" y="209" width="51" height="31"/>
+                                            <rect key="frame" x="536" y="199" width="51" height="31"/>
                                         </switch>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BADGE APP ICON" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpL-9G-xvL">
-                                            <rect key="frame" x="20" y="248" width="120" height="14"/>
+                                            <rect key="frame" x="20" y="238" width="120" height="14"/>
                                             <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
                                             <color key="textColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="czZ-9H-ho6">
-                                            <rect key="frame" x="536" y="239.5" width="51" height="31"/>
+                                            <rect key="frame" x="536" y="229" width="51" height="31"/>
                                         </switch>
                                     </subviews>
                                     <constraints>
@@ -244,6 +244,7 @@
                                         <constraint firstAttribute="trailing" secondItem="av5-rH-gB9" secondAttribute="trailing" constant="19" id="sXA-gt-80S"/>
                                         <constraint firstAttribute="trailing" secondItem="syi-K7-iqf" secondAttribute="trailing" constant="15" id="tGP-2L-vfT"/>
                                         <constraint firstItem="Sdp-qm-puR" firstAttribute="top" secondItem="Eku-mZ-Evl" secondAttribute="bottom" constant="8" id="tGW-jk-Hqy"/>
+                                        <constraint firstItem="av5-rH-gB9" firstAttribute="centerY" secondItem="Fzn-XE-fpV" secondAttribute="centerY" id="vZY-Rv-Kbs"/>
                                         <constraint firstItem="DJo-dJ-dYb" firstAttribute="leading" secondItem="TLg-U9-QUm" secondAttribute="leading" constant="20" id="var-Di-3Mu"/>
                                         <constraint firstAttribute="trailing" secondItem="u5p-j8-dYY" secondAttribute="trailing" constant="15" id="wlL-t2-2R2"/>
                                         <constraint firstAttribute="trailing" secondItem="AYm-Ja-29P" secondAttribute="trailing" constant="13" id="xnM-Bl-XGQ"/>
@@ -258,8 +259,56 @@
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9Y-7g-dyH">
                                     <rect key="frame" x="0.0" y="393" width="600" height="100"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5l-xW-TJz">
+                                            <rect key="frame" x="414" y="65" width="163" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="BNC-az-ReZ"/>
+                                                <constraint firstAttribute="width" constant="163" id="Tjc-nr-MY6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                            <inset key="titleEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="www.minishows.com" image="info2Button">
+                                                <color key="titleColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORk-rx-Ixe">
+                                            <rect key="frame" x="50" y="68" width="103" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="5XB-iN-b8O"/>
+                                                <constraint firstAttribute="width" constant="103" id="7ve-bV-a3t"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                            <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="@miniShows" image="twitterButton">
+                                                <color key="titleColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-tX-7Vr">
+                                            <rect key="frame" x="275.5" y="28" width="50" height="10"/>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                            <color key="textColor" red="0.0" green="0.73599273990000003" blue="0.00022530488950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="miniShows" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHH-wJ-xbh">
+                                            <rect key="frame" x="265.5" y="14" width="69.5" height="14"/>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.73599273990000003" blue="0.00022530488950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="qHH-wJ-xbh" secondAttribute="centerX" id="CWO-QY-3Ml"/>
+                                        <constraint firstItem="ORk-rx-Ixe" firstAttribute="leading" secondItem="t9Y-7g-dyH" secondAttribute="leading" constant="50" id="U0s-3P-Jhq"/>
+                                        <constraint firstItem="U5l-xW-TJz" firstAttribute="top" secondItem="x2o-tX-7Vr" secondAttribute="bottom" constant="27" id="VfF-DB-Dmz"/>
+                                        <constraint firstItem="ORk-rx-Ixe" firstAttribute="centerY" secondItem="U5l-xW-TJz" secondAttribute="centerY" id="cnn-jM-sBI"/>
                                         <constraint firstAttribute="height" constant="100" id="iYV-Jb-DxR"/>
+                                        <constraint firstAttribute="centerX" secondItem="x2o-tX-7Vr" secondAttribute="centerX" id="mpd-AM-MWB"/>
+                                        <constraint firstAttribute="bottom" secondItem="ORk-rx-Ixe" secondAttribute="bottom" constant="15" id="nIQ-o7-qcL"/>
+                                        <constraint firstAttribute="trailing" secondItem="U5l-xW-TJz" secondAttribute="trailing" constant="23" id="vwH-7F-zvQ"/>
+                                        <constraint firstItem="ORk-rx-Ixe" firstAttribute="top" secondItem="qHH-wJ-xbh" secondAttribute="bottom" constant="40" id="w7R-cc-N4R"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -301,10 +350,12 @@
         </view>
     </objects>
     <resources>
-        <image name="gridLayoutONButton" width="32" height="32"/>
-        <image name="listLayoutONButton" width="27" height="23"/>
+        <image name="gridLayoutONButton" width="16" height="16"/>
+        <image name="info2Button" width="17" height="17"/>
+        <image name="listLayoutONButton" width="14" height="12"/>
         <image name="ovalGreen" width="18" height="18"/>
         <image name="ovalPink" width="18" height="18"/>
         <image name="ovalYellow" width="18" height="18"/>
+        <image name="twitterButton" width="17" height="17"/>
     </resources>
 </document>
