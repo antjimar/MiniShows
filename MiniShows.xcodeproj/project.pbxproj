@@ -14,6 +14,8 @@
 		799B8DBD1A937F960082612E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799B8DBC1A937F960082612E /* Images.xcassets */; };
 		799B8DC01A937F960082612E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799B8DBE1A937F960082612E /* LaunchScreen.xib */; };
 		799B8DCC1A937F960082612E /* MiniShowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 799B8DCB1A937F960082612E /* MiniShowsTests.m */; };
+		799B8DDC1A9386840082612E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799B8DDA1A9386840082612E /* SettingsViewController.m */; };
+		799B8DDD1A9386840082612E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799B8DDB1A9386840082612E /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		799B8DC51A937F960082612E /* MiniShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		799B8DCA1A937F960082612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		799B8DCB1A937F960082612E /* MiniShowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniShowsTests.m; sourceTree = "<group>"; };
+		799B8DD91A9386840082612E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		799B8DDA1A9386840082612E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		799B8DDB1A9386840082612E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,9 @@
 				799B8DBC1A937F960082612E /* Images.xcassets */,
 				799B8DBE1A937F960082612E /* LaunchScreen.xib */,
 				799B8DAF1A937F960082612E /* Supporting Files */,
+				799B8DD91A9386840082612E /* SettingsViewController.h */,
+				799B8DDA1A9386840082612E /* SettingsViewController.m */,
+				799B8DDB1A9386840082612E /* SettingsViewController.xib */,
 			);
 			path = MiniShows;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 				799B8DBB1A937F960082612E /* Main.storyboard in Resources */,
 				799B8DC01A937F960082612E /* LaunchScreen.xib in Resources */,
 				799B8DBD1A937F960082612E /* Images.xcassets in Resources */,
+				799B8DDD1A9386840082612E /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +239,7 @@
 				799B8DB81A937F960082612E /* ViewController.m in Sources */,
 				799B8DB51A937F960082612E /* AppDelegate.m in Sources */,
 				799B8DB21A937F960082612E /* main.m in Sources */,
+				799B8DDC1A9386840082612E /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
