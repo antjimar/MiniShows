@@ -81,6 +81,7 @@
 		799B8DAE1A937F960082612E /* MiniShows */ = {
 			isa = PBXGroup;
 			children = (
+				799B8DD81A9384F50082612E /* Views */,
 				799B8DB31A937F960082612E /* AppDelegate.h */,
 				799B8DB41A937F960082612E /* AppDelegate.m */,
 				799B8DB61A937F960082612E /* ViewController.h */,
@@ -117,6 +118,13 @@
 				799B8DCA1A937F960082612E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		799B8DD81A9384F50082612E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
