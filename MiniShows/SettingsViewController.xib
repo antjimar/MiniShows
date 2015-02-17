@@ -362,14 +362,12 @@
                                 </mask>
                             </variation>
                             <variation key="heightClass=compact">
-                                <mask key="subviews">
-                                    <exclude reference="TGd-0n-wp3"/>
-                                </mask>
                                 <mask key="constraints">
                                     <include reference="8RS-yR-4vz"/>
                                     <include reference="Mwh-gQ-2hd"/>
                                 </mask>
                             </variation>
+                            <variation key="heightClass=regular-widthClass=compact"/>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -381,6 +379,11 @@
                         <constraint firstAttribute="trailing" secondItem="UOI-r5-CMC" secondAttribute="trailing" id="iXT-fU-EWK"/>
                         <constraint firstItem="UOI-r5-CMC" firstAttribute="top" secondItem="GZD-Rj-Rdy" secondAttribute="top" id="yL6-fV-Svz"/>
                     </constraints>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="S7d-Yu-yCd"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
