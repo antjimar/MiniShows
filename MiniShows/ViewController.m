@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SettingsViewController.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    SettingsViewController *settingsVC = [[SettingsViewController alloc] init];
+    
+    [self.navigationController pushViewController:settingsVC animated:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
