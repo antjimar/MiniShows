@@ -10,6 +10,9 @@
 
 @interface SettingsViewController ()
 
+
+@property (strong, nonatomic) IBOutletCollection(UISwitch) NSArray *mySwitchs;
+
 @end
 
 @implementation SettingsViewController
@@ -17,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    for (UISwitch *mySwitch in self.mySwitchs) {
+        mySwitch.transform = CGAffineTransformMakeScale(0.60, 0.60);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
