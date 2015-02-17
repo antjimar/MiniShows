@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "Serie.h"
+#import "ShowTableViewCell.h"
 
-@interface ViewController ()
+NSString *const kCustomCell = @"kCustomCell";
+
+
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *homeTableView;
+@property (nonatomic, strong) NSMutableArray *series;
 
 @end
 
@@ -17,11 +25,68 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.series = [NSMutableArray array];
+    
+    [self createModel];
+    
+    
+    self.homeTableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    
+    self.homeTableView.dataSource = self;
+    self.homeTableView.delegate = self;
+    
+    [self.homeTableView  registerNib:[UINib nibWithNibName:@"showCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomCell];
+    
+    [self.view addSubview:self.homeTableView];
+
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.series.count;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+      ShowTableViewCell *myCell = [self.homeTableView dequeueReusableCellWithIdentifier:kCustomCell forIndexPath:indexPath];
+    
+    
+    Serie *serie = self.series[indexPath.row];
+    myCell.serieTitle.text = serie.title;
+    myCell.serieSlogan.text = serie.slogan;
+    myCell.serieCounter.text = serie.counter;
+    myCell.serieImage.image = serie.serieImage;
+    
+    
+    return myCell;
+}
+
+- (void)createModel{
+    
+    Serie *suits = [[Serie alloc] initWithTitle:@"Suits" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"image"]];
+    [self.series addObject:suits];
+    
+    Serie *gameOfThrones = [[Serie alloc] initWithTitle:@"GameOfThrones" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"image"]];
+    [self.series addObject:gameOfThrones];
+    
+    Serie *houseOfCards = [[Serie alloc] initWithTitle:@"HouseOfCards" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"image"]];
+    [self.series addObject:houseOfCards];
+    
+    Serie *modernFamily = [[Serie alloc] initWithTitle:@"ModernFamily" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"image"]];
+    [self.series addObject:modernFamily];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
 
 @end
