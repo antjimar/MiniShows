@@ -41,6 +41,7 @@
                     <constraint firstItem="fEp-vz-hT5" firstAttribute="top" secondItem="QNF-tf-BRw" secondAttribute="topMargin" constant="15" id="0sf-zb-EL7"/>
                     <constraint firstItem="fEp-vz-hT5" firstAttribute="top" secondItem="QNF-tf-BRw" secondAttribute="top" constant="150" id="3uE-d2-mGs"/>
                     <constraint firstItem="oeV-n0-fxn" firstAttribute="leading" secondItem="fEp-vz-hT5" secondAttribute="trailing" constant="60" id="47G-QI-fnZ"/>
+                    <constraint firstItem="QD5-fL-7AK" firstAttribute="top" secondItem="rHO-8w-9O7" secondAttribute="bottom" constant="30" id="5nR-7t-J4t"/>
                     <constraint firstAttribute="trailing" secondItem="oeV-n0-fxn" secondAttribute="trailing" constant="277" id="DbD-7X-iIH"/>
                     <constraint firstItem="oeV-n0-fxn" firstAttribute="top" secondItem="QNF-tf-BRw" secondAttribute="topMargin" constant="31" id="PtH-pJ-gG5"/>
                     <constraint firstAttribute="bottomMargin" secondItem="fEp-vz-hT5" secondAttribute="bottom" constant="15" id="TFq-b0-gEO"/>
@@ -60,7 +61,7 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="328.5" y="370.5"/>
+            <point key="canvasLocation" x="328.5" y="364.5"/>
         </tableViewCell>
     </objects>
 </document>
