@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *slogan;
-@property (nonatomic) NSString *counter;
+@property (nonatomic, strong) NSString *counter;
 @property (nonatomic, strong) NSString *generalInfo;
 @property (nonatomic, strong) NSString *overView;
 @property (nonatomic, strong) UIImage *serieImage;

@@ -11,9 +11,13 @@
 @implementation ShowTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+     self.serieImage.clipsToBounds = YES;
 }
-
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self layoutIfNeeded];
+    self.serieImage.layer.cornerRadius = self.serieImage.bounds.size.height/2;
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

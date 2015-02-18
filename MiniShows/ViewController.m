@@ -36,7 +36,7 @@ NSString *const kCustomCell = @"kCustomCell";
     self.homeTableView.dataSource = self;
     self.homeTableView.delegate = self;
     
-    [self.homeTableView  registerNib:[UINib nibWithNibName:@"showCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomCell];
+    [self.homeTableView registerNib:[UINib nibWithNibName:@"showCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomCell];
     
     [self.view addSubview:self.homeTableView];
 
@@ -58,22 +58,27 @@ NSString *const kCustomCell = @"kCustomCell";
     myCell.serieCounter.text = serie.counter;
     myCell.serieImage.image = serie.serieImage;
     
+   
+    
+   
     
     return myCell;
 }
 
 - (void)createModel{
     
-    Serie *suits = [[Serie alloc] initWithTitle:@"Suits" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"image"]];
+    Serie *suits = [[Serie alloc] initWithTitle:@"Suits" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"Wallpaper_Wizard"]];
+    
+
     [self.series addObject:suits];
     
-    Serie *gameOfThrones = [[Serie alloc] initWithTitle:@"GameOfThrones" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"image"]];
+    Serie *gameOfThrones = [[Serie alloc] initWithTitle:@"GameOfThrones" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"Game_of_Thrones"]];
     [self.series addObject:gameOfThrones];
     
-    Serie *houseOfCards = [[Serie alloc] initWithTitle:@"HouseOfCards" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"image"]];
+    Serie *houseOfCards = [[Serie alloc] initWithTitle:@"HouseOfCards" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"House_of_Cards"]];
     [self.series addObject:houseOfCards];
     
-    Serie *modernFamily = [[Serie alloc] initWithTitle:@"ModernFamily" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"image"]];
+    Serie *modernFamily = [[Serie alloc] initWithTitle:@"ModernFamily" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"modern_family"]];
     [self.series addObject:modernFamily];
     
     
