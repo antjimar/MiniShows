@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--miniSHOWS-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -17,7 +17,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HSN-cp-1ZD"/>
+                    <navigationItem key="navigationItem" title="miniSHOWS" id="HSN-cp-1ZD">
+                        <barButtonItem key="leftBarButtonItem" image="settingsButton" id="EZZ-GV-iis"/>
+                        <barButtonItem key="rightBarButtonItem" image="plusButton" id="zOd-O0-8uI"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,4 +45,9 @@
             <point key="canvasLocation" x="318" y="-341"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plusButton" width="17" height="17"/>
+        <image name="settingsButton" width="21" height="22"/>
+    </resources>
+    <color key="tintColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
 </document>
