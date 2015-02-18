@@ -28,11 +28,6 @@ NSString *const kCustomCell = @"kCustomCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-}
-
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
     self.series = [NSMutableArray array];
     [self createModel];
     self.homeTableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
@@ -40,6 +35,12 @@ NSString *const kCustomCell = @"kCustomCell";
     self.homeTableView.delegate = self;
     [self.homeTableView registerNib:[UINib nibWithNibName:@"showCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomCell];
     [self.view addSubview:self.homeTableView];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.view layoutIfNeeded];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -62,6 +63,11 @@ NSString *const kCustomCell = @"kCustomCell";
     
     return myCell;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 107;
+}
+
 
 - (void)createModel{
     
