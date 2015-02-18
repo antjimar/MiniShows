@@ -18,7 +18,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="miniSHOWS" id="HSN-cp-1ZD">
-                        <barButtonItem key="leftBarButtonItem" image="settingsButton" id="EZZ-GV-iis"/>
+                        <barButtonItem key="leftBarButtonItem" image="settingsButton" id="EZZ-GV-iis">
+                            <connections>
+                                <action selector="settingButtonPressed:" destination="vXZ-lx-hvc" id="PmZ-6j-kvv"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plusButton" id="zOd-O0-8uI"/>
                     </navigationItem>
                 </viewController>

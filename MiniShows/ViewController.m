@@ -18,6 +18,7 @@ NSString *const kCustomCell = @"kCustomCell";
 
 @property (nonatomic, strong) UITableView *homeTableView;
 @property (nonatomic, strong) NSMutableArray *series;
+@property (nonatomic, strong) UINavigationController *navVC;
 
 @end
 
@@ -27,25 +28,18 @@ NSString *const kCustomCell = @"kCustomCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    SettingsViewController *settingsVC = [[SettingsViewController alloc] init];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    [self.navigationController pushViewController:settingsVC animated:YES];
     self.series = [NSMutableArray array];
-    
     [self createModel];
-    
-    
     self.homeTableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-    
     self.homeTableView.dataSource = self;
     self.homeTableView.delegate = self;
-    
     [self.homeTableView registerNib:[UINib nibWithNibName:@"showCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomCell];
-    
     [self.view addSubview:self.homeTableView];
-
-    
-    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -84,17 +78,22 @@ NSString *const kCustomCell = @"kCustomCell";
     
     Serie *modernFamily = [[Serie alloc] initWithTitle:@"ModernFamily" slogan:@"slogan" counter:@"counter" generalInfo:@"Info" overView:@"overView" image:[UIImage imageNamed:@"modern_family"]];
     [self.series addObject:modernFamily];
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 }
 
+- (IBAction)settingButtonPressed:(UIBarButtonItem *)sender {
+    SettingsViewController *settingsVC = [[SettingsViewController alloc] init];
+    self.navVC = [[UINavigationController alloc] initWithRootViewController:settingsVC];
+    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(closeSettings)];
+    [settingsVC.navigationItem setLeftBarButtonItem:closeButton];
+    
+    
+    [self presentViewController:self.navVC animated:YES completion:nil];
+}
+
+- (void)closeSettings {
+    [self.navVC dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 
