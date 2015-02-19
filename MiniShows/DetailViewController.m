@@ -8,12 +8,14 @@
 
 #import "DetailViewController.h"
 
-@interface DetailViewController ()
+@interface DetailViewController ()<UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintGreenBar;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraingTextViewHeight;
-
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopBarGreen;
 @property (weak, nonatomic) IBOutlet UITextView *firstTextView;
+@property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
 
+@property (nonatomic) CGFloat initialYScroll;
 
 @end
 
@@ -21,14 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // + Navigation height
-    self.constraintTopBarGreen.constant += 64.0f;
+    self.myScrollView.delegate = self;
     
     CGFloat heightText = [self getContentSize:self.firstTextView];
-    
-    
     self.constraingTextViewHeight.constant = heightText;
-
+    
+    self.initialYScroll = self.myScrollView.contentOffset.y;
 }
 
 -(CGFloat) getContentSize:(UITextView *) myTextView {
@@ -44,6 +44,18 @@
     CGSize expectSize = [gettingSizeTexView sizeThatFits:maximumLabelSize];
     
     return expectSize.height;
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"%@", NSStringFromCGPoint(scrollView.contentOffset));
+    
+    if (scrollView.contentOffset.y > 136.0f) {
+        self.constraintGreenBar.constant = self.constraintGreenBar.constant + scrollView.contentOffset.y - 64.0f;
+    }
+    
+    
+    
+    
 }
 
 @end
