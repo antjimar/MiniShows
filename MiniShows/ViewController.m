@@ -11,15 +11,13 @@
 #import "Serie.h"
 #import "ShowTableViewCell.h"
 #import "DetailViewController.h"
+#import "TransitionFromTableToDetail.h"
 
 NSString *const kCustomCell = @"kCustomCell";
 
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
 
-@property (nonatomic, strong) UITableView *homeTableView;
-@property (nonatomic, strong) NSMutableArray *series;
-@property (nonatomic, strong) UINavigationController *navVC;
 
 @end
 
@@ -36,6 +34,7 @@ NSString *const kCustomCell = @"kCustomCell";
     self.homeTableView.delegate = self;
     [self.homeTableView registerNib:[UINib nibWithNibName:@"showCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomCell];
     [self.view addSubview:self.homeTableView];
+    self.navigationController.delegate = self;
     
 }
 
@@ -54,7 +53,7 @@ NSString *const kCustomCell = @"kCustomCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-      ShowTableViewCell *myCell = [self.homeTableView dequeueReusableCellWithIdentifier:kCustomCell forIndexPath:indexPath];
+    ShowTableViewCell *myCell = [self.homeTableView dequeueReusableCellWithIdentifier:kCustomCell forIndexPath:indexPath];
     
     Serie *serie = self.series[indexPath.row];
     myCell.serieTitle.text = serie.title;
@@ -72,9 +71,24 @@ NSString *const kCustomCell = @"kCustomCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     DetailViewController *detailVC = [[DetailViewController alloc] init];
+    Serie *serie = self.series[indexPath.row];
+    detailVC.imageDetail.image = serie.serieImage;
+//    detailVC
     
     [self.navigationController pushViewController:detailVC animated:YES];
     
+}
+
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+                                               fromViewController:(UIViewController *)fromVC
+                                                 toViewController:(UIViewController *)toVC {
+    
+    TransitionFromTableToDetail *transition = [[TransitionFromTableToDetail alloc] init];
+    transition.operation = operation;
+    
+    return transition;
 }
 
 
