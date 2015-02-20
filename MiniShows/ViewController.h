@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) UITableView *homeTableView;
+@property (nonatomic, strong) NSMutableArray *series;
+@property (nonatomic, strong) UINavigationController *navVC;
+
+
 
 @end
 

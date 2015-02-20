@@ -10,4 +10,8 @@
 
 @interface DetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageDetail;
+@property (weak, nonatomic) IBOutlet UILabel *generalInfoLabel;
+
+
 @end

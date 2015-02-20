@@ -12,6 +12,7 @@
 		11EC4A331A93C3B10070C3A7 /* ShowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EC4A321A93C3B10070C3A7 /* ShowTableViewCell.m */; };
 		792F4A711A94F21D00409EA4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792F4A6F1A94F21D00409EA4 /* DetailViewController.m */; };
 		792F4A721A94F21D00409EA4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792F4A701A94F21D00409EA4 /* DetailViewController.xib */; };
+		792F4A971A9748E800409EA4 /* TransitionFromTableToDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 792F4A961A9748E800409EA4 /* TransitionFromTableToDetail.m */; };
 		799B8DB21A937F960082612E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 799B8DB11A937F960082612E /* main.m */; };
 		799B8DB51A937F960082612E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 799B8DB41A937F960082612E /* AppDelegate.m */; };
 		799B8DB81A937F960082612E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799B8DB71A937F960082612E /* ViewController.m */; };
@@ -42,6 +43,8 @@
 		792F4A6E1A94F21D00409EA4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		792F4A6F1A94F21D00409EA4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		792F4A701A94F21D00409EA4 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		792F4A951A9748E800409EA4 /* TransitionFromTableToDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransitionFromTableToDetail.h; path = Transitions/TransitionFromTableToDetail.h; sourceTree = "<group>"; };
+		792F4A961A9748E800409EA4 /* TransitionFromTableToDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransitionFromTableToDetail.m; path = Transitions/TransitionFromTableToDetail.m; sourceTree = "<group>"; };
 		799B8DAC1A937F960082612E /* MiniShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799B8DB01A937F960082612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		799B8DB11A937F960082612E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +100,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		792F4A941A9748CA00409EA4 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				792F4A951A9748E800409EA4 /* TransitionFromTableToDetail.h */,
+				792F4A961A9748E800409EA4 /* TransitionFromTableToDetail.m */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
 		799B8DA31A937F960082612E = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		799B8DAE1A937F960082612E /* MiniShows */ = {
 			isa = PBXGroup;
 			children = (
+				792F4A941A9748CA00409EA4 /* Transitions */,
 				11EC4A2A1A93B62B0070C3A7 /* Model */,
 				11EB37B81A9384A10089BDCA /* Views */,
 				799B8DB31A937F960082612E /* AppDelegate.h */,
@@ -272,6 +285,7 @@
 				11EC4A2D1A93B6830070C3A7 /* Serie.m in Sources */,
 				799B8DB21A937F960082612E /* main.m in Sources */,
 				799B8DDC1A9386840082612E /* SettingsViewController.m in Sources */,
+				792F4A971A9748E800409EA4 /* TransitionFromTableToDetail.m in Sources */,
 				11EC4A331A93C3B10070C3A7 /* ShowTableViewCell.m in Sources */,
 				792F4A711A94F21D00409EA4 /* DetailViewController.m in Sources */,
 			);
