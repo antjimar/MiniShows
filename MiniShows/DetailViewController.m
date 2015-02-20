@@ -34,7 +34,6 @@
 -(CGFloat) getContentSize:(UITextView *) myTextView {
     UIFont * font = [UIFont fontWithName:@"Heiti SC" size:11];
     
-    
     UITextView *gettingSizeTexView = [[UITextView alloc] init];
     gettingSizeTexView.font = font;
     gettingSizeTexView.text = myTextView.text;
@@ -49,9 +48,9 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSLog(@"%@", NSStringFromCGPoint(scrollView.contentOffset));
     
-    if (scrollView.contentOffset.y > 136.0f) {
-        self.constraintGreenBar.constant = self.constraintGreenBar.constant + scrollView.contentOffset.y - 64.0f;
-    }
+//    if (scrollView.contentOffset.y > 136.0f) {
+//        self.constraintGreenBar.constant = self.constraintGreenBar.constant + scrollView.contentOffset.y - 64.0f;
+//    }
     
     
     
