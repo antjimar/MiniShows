@@ -11,7 +11,7 @@
 #import "DetailViewController.h"
 #import "ShowTableViewCell.h"
 
-static CGFloat const totalDuration = 2.0;
+static CGFloat const totalDuration = 0.4;
 
 
 @implementation TransitionFromTableToDetail
@@ -69,14 +69,11 @@ static CGFloat const totalDuration = 2.0;
                                               toViewController.imageDetail.image = image.image;
                                               toViewController.view.alpha = 1.0f;
                                           } completion:^(BOOL finished) {
+                                              image.hidden = NO;
                                               [transitionContext completeTransition:YES];
                                               
                                           }];
                      }];
-    
-    
-    
-    
 }
 
 - (void)dismissAnimationWithTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -87,12 +84,19 @@ static CGFloat const totalDuration = 2.0;
     UIView *contextView = [transitionContext containerView];
     [contextView addSubview:fromViewController.view];
     [contextView addSubview:toViewController.view];
+    [contextView setBackgroundColor:[UIColor whiteColor]];
+
     
     [UIView animateWithDuration:totalDuration
                      animations:^{
-                         
+                         fromViewController.view.alpha = 0.0f;
                      } completion:^(BOOL finished) {
-                         
+                         [UIView animateWithDuration:totalDuration
+                                          animations:^{
+                                              toViewController.view.alpha = 1.0;
+                                          } completion:^(BOOL finished) {
+                                              [transitionContext completeTransition:YES];
+                                          }];
                      }];
 
     
