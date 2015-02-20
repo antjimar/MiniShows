@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="constraintGreenBar" destination="wAk-4R-bug" id="tHV-d5-y6c"/>
+                <outlet property="myScrollView" destination="hfD-PV-m55" id="zdW-5D-4cp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loz-HS-fNN">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-PV-m55">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8vI-1N-0JV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="240" id="dfU-XD-14a"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-rW-jrb">
+                                    <rect key="frame" x="0.0" y="240" width="600" height="341"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7T-pn-hQn">
+                                            <rect key="frame" x="15" y="15" width="570" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="NKc-ib-gSG"/>
+                                            </constraints>
+                                            <string key="text">General info
+</string>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="24"/>
+                                            <color key="textColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQz-eY-urH">
+                                            <rect key="frame" x="15" y="147" width="570" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="of6-AG-zRr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="24"/>
+                                            <color key="textColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdC-fk-nQI">
+                                            <rect key="frame" x="15" y="44" width="570" height="80"/>
+                                            <mutableString key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo</mutableString>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiV-EU-zYM">
+                                            <rect key="frame" x="15" y="176" width="570" height="150"/>
+                                            <mutableString key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo</mutableString>
+                                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="OQz-eY-urH" secondAttribute="trailing" constant="15" id="3zz-7c-10o"/>
+                                        <constraint firstItem="LiV-EU-zYM" firstAttribute="top" secondItem="OQz-eY-urH" secondAttribute="bottom" constant="8" id="7dZ-M6-2mX"/>
+                                        <constraint firstAttribute="trailing" secondItem="LiV-EU-zYM" secondAttribute="trailing" constant="15" id="7ip-Hp-8JY"/>
+                                        <constraint firstItem="OQz-eY-urH" firstAttribute="leading" secondItem="sYr-rW-jrb" secondAttribute="leading" constant="15" id="IlG-tc-NBA"/>
+                                        <constraint firstItem="LiV-EU-zYM" firstAttribute="leading" secondItem="sYr-rW-jrb" secondAttribute="leading" constant="15" id="Orc-Wa-s1d"/>
+                                        <constraint firstItem="pdC-fk-nQI" firstAttribute="leading" secondItem="sYr-rW-jrb" secondAttribute="leading" constant="15" id="PRF-Nq-Vdl"/>
+                                        <constraint firstItem="pdC-fk-nQI" firstAttribute="top" secondItem="p7T-pn-hQn" secondAttribute="bottom" constant="8" id="buS-NE-UgU"/>
+                                        <constraint firstAttribute="bottom" secondItem="LiV-EU-zYM" secondAttribute="bottom" constant="15" id="fUs-6L-WuZ"/>
+                                        <constraint firstItem="p7T-pn-hQn" firstAttribute="top" secondItem="sYr-rW-jrb" secondAttribute="top" constant="15" id="ftS-Vz-PzO"/>
+                                        <constraint firstAttribute="trailing" secondItem="p7T-pn-hQn" secondAttribute="trailing" constant="15" id="hZP-vx-zs4"/>
+                                        <constraint firstItem="OQz-eY-urH" firstAttribute="top" secondItem="pdC-fk-nQI" secondAttribute="bottom" constant="23" id="i0M-JS-DjK"/>
+                                        <constraint firstAttribute="trailing" secondItem="pdC-fk-nQI" secondAttribute="trailing" constant="15" id="i4e-OZ-bi9"/>
+                                        <constraint firstItem="p7T-pn-hQn" firstAttribute="leading" secondItem="sYr-rW-jrb" secondAttribute="leading" constant="15" id="uHP-9J-pSL"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="sYr-rW-jrb" firstAttribute="top" secondItem="hfD-PV-m55" secondAttribute="top" constant="240" id="9jy-PD-6i0"/>
+                                <constraint firstItem="8vI-1N-0JV" firstAttribute="top" secondItem="hfD-PV-m55" secondAttribute="top" id="FA1-lc-1Rh"/>
+                                <constraint firstAttribute="trailing" secondItem="sYr-rW-jrb" secondAttribute="trailing" id="Ndp-Eo-By2"/>
+                                <constraint firstAttribute="bottom" secondItem="sYr-rW-jrb" secondAttribute="bottom" id="XRU-EJ-e2c"/>
+                                <constraint firstItem="8vI-1N-0JV" firstAttribute="centerX" secondItem="hfD-PV-m55" secondAttribute="centerX" id="e5o-bG-xIk"/>
+                                <constraint firstItem="8vI-1N-0JV" firstAttribute="leading" secondItem="hfD-PV-m55" secondAttribute="leading" id="j8W-aV-ziO"/>
+                                <constraint firstItem="sYr-rW-jrb" firstAttribute="leading" secondItem="hfD-PV-m55" secondAttribute="leading" id="qYd-aR-5dr"/>
+                                <constraint firstAttribute="trailing" secondItem="8vI-1N-0JV" secondAttribute="trailing" id="uUv-04-DPt"/>
+                            </constraints>
+                        </scrollView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHl-4E-34T">
+                            <rect key="frame" x="0.0" y="200" width="600" height="40"/>
+                            <color key="backgroundColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="0.38" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="waQ-G2-w5z"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hfD-PV-m55" secondAttribute="trailing" id="9fe-9d-6tp"/>
+                        <constraint firstItem="hfD-PV-m55" firstAttribute="top" secondItem="loz-HS-fNN" secondAttribute="top" id="AB5-XK-FdO"/>
+                        <constraint firstAttribute="trailing" secondItem="iHl-4E-34T" secondAttribute="trailing" id="Wyq-LU-JlB"/>
+                        <constraint firstAttribute="bottom" secondItem="hfD-PV-m55" secondAttribute="bottom" id="Y5H-AX-uhI"/>
+                        <constraint firstItem="iHl-4E-34T" firstAttribute="leading" secondItem="loz-HS-fNN" secondAttribute="leading" id="j2v-yL-3oW"/>
+                        <constraint firstItem="hfD-PV-m55" firstAttribute="leading" secondItem="loz-HS-fNN" secondAttribute="leading" id="pwS-8x-4bU"/>
+                        <constraint firstItem="iHl-4E-34T" firstAttribute="top" secondItem="8vI-1N-0JV" secondAttribute="bottom" constant="-40" id="wAk-4R-bug"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="loz-HS-fNN" secondAttribute="trailing" id="2ey-rh-xek"/>
+                <constraint firstItem="loz-HS-fNN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dzN-QX-2rR"/>
+                <constraint firstItem="loz-HS-fNN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iPI-Rk-MZ5"/>
+                <constraint firstAttribute="bottom" secondItem="loz-HS-fNN" secondAttribute="bottom" id="uze-pd-LAc"/>
+            </constraints>
+            <point key="canvasLocation" x="285" y="395"/>
+        </view>
+    </objects>
+</document>

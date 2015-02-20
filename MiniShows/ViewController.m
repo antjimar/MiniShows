@@ -10,6 +10,7 @@
 #import "SettingsViewController.h"
 #import "Serie.h"
 #import "ShowTableViewCell.h"
+#import "DetailViewController.h"
 
 NSString *const kCustomCell = @"kCustomCell";
 
@@ -38,6 +39,11 @@ NSString *const kCustomCell = @"kCustomCell";
     
 }
 
+-(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.homeTableView.frame = self.view.frame;
+}
+
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.view layoutIfNeeded];
@@ -50,22 +56,25 @@ NSString *const kCustomCell = @"kCustomCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
       ShowTableViewCell *myCell = [self.homeTableView dequeueReusableCellWithIdentifier:kCustomCell forIndexPath:indexPath];
     
-    
     Serie *serie = self.series[indexPath.row];
     myCell.serieTitle.text = serie.title;
     myCell.serieSlogan.text = serie.slogan;
     myCell.serieCounter.text = serie.counter;
     myCell.serieImage.image = serie.serieImage;
     
-   
-    
-   
-    
     return myCell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 107;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    DetailViewController *detailVC = [[DetailViewController alloc] init];
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
 }
 
 
@@ -90,9 +99,16 @@ NSString *const kCustomCell = @"kCustomCell";
 - (IBAction)settingButtonPressed:(UIBarButtonItem *)sender {
     SettingsViewController *settingsVC = [[SettingsViewController alloc] init];
     self.navVC = [[UINavigationController alloc] initWithRootViewController:settingsVC];
-    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(closeSettings)];
-    [settingsVC.navigationItem setLeftBarButtonItem:closeButton];
     
+    
+    
+    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"closeButton"] style:UIBarButtonItemStylePlain target:self action:@selector(closeSettings)];
+
+    [settingsVC.navigationItem setLeftBarButtonItem:closeButton];
+    [settingsVC.navigationController.navigationBar setTintColor:[UIColor colorWithRed:(126.0f/255.0f)
+                                                                                green:(211.0f/255.0f)
+                                                                                 blue:(33.0f/255.0f)
+                                                                                alpha:1.0f]];
     
     [self presentViewController:self.navVC animated:YES completion:nil];
 }
@@ -100,6 +116,8 @@ NSString *const kCustomCell = @"kCustomCell";
 - (void)closeSettings {
     [self.navVC dismissViewControllerAnimated:YES completion:nil];
 }
+
+
 
 
 
